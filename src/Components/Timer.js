@@ -1,7 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-
 //create a context api for multiple use this state
  const UseContext =createContext()
  export const UseContextProvider =(props) =>{
@@ -41,7 +40,7 @@ import { Link } from 'react-router-dom';
 
     return (
      
-        <div className="Time">
+        <div className="timer">
             <div>
            {/* math.floor is a method and here is minutes , second and milliseconds  implementation
            and also used  slice method which is es6 method   */}
@@ -51,9 +50,9 @@ import { Link } from 'react-router-dom';
             </div>
             <div>
                 {/* here is setTimeOn function is used which is declared in useState and implement in useEffect */}
-                <button id="0" onClick={() => setTimeOn(true)}>Start</button>
-                <button id="1" onClick={() => setTimeOn(false)}>Stop</button>
-                <button id="2" onClick={() =>  setTime(0)}>Reset</button>
+                <button  onClick={() => setTimeOn(true)}>Start</button>
+                <button onClick={() => setTimeOn(false)}>Stop</button>
+                <button  onClick={() =>  setTime(0)}>Reset</button>
                 
            
             </div>

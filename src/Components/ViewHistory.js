@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import { useProp } from './Timer';
 
 const ViewHistory = () => {
+    //use useContext hook for this component
     const props =useProp()
    console.log(props)
     return (
